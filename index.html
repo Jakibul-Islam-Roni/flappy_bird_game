@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Realistic Flappy Bird</title>
+    <meta name="description" content="A professional, realistic Flappy Bird clone with infinity flying and complex levels.">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- UI Overlays -->
+        <div id="ui-layer">
+            <div id="score-display">0</div>
+            
+            <div id="start-screen" class="screen active">
+                <h1>FLAPPY BIRD</h1>
+                <p>Tap, Click, or Space to Fly</p>
+                <p class="subtitle">Collect coins for extra points!</p>
+                <button id="start-btn">PLAY NOW</button>
+            </div>
+            
+            <div id="game-over-screen" class="screen">
+                <h2>GAME OVER</h2>
+                <div class="stats">
+                    <p>Time Alive: <span id="final-time">0</span>s</p>
+                    <p>Coins: <span id="final-coins">0</span></p>
+                    <p class="total-score">Total Score: <span id="final-score">0</span></p>
+                    <p class="best-score">Best Score: <span id="best-score">0</span></p>
+                </div>
+                <button id="reset-btn">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
